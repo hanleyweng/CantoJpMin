@@ -1,5 +1,5 @@
 # CantoJpMin (廣東話/粵語 - 粵拼 - 縮細)
-Cantonese Jyutping Minimized
+Cantonese Jyutping Minified
 
 This is a small script to enable Cantonese to Jyutping conversions (also known as 'Cantonese Transliteration' or 'Cantonese Romanization'). The script is optimized for small web apps and static web pages. It does does not require a backend server.
 
@@ -13,7 +13,8 @@ This is a small script to enable Cantonese to Jyutping conversions (also known a
 
 ## Examples
 
-For a simpistic Cantonese to Jyutping transliteration, use *'toJyutping(…)'*:
+For a simpistic Cantonese to Jyutping transliteration, use **'toJyutping(…)'**:
+
 _(This uses the first jyutping option for each character)_
 ```
 console.log( CantoJpMin.toJyutping('食咗飯未呀?🍚') );
@@ -21,7 +22,7 @@ console.log( CantoJpMin.toJyutping('食咗飯未呀?🍚') );
 /* Result => sik6 zo2 faan6 mei6 aa1 ?🍚 */
 ```
 
-For a more detailed transliteration, parse *'toJyutpingArray(…)'*:
+To see more jyutping options, run **'toJyutpingArray(…)'**:
 ```
 console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
 
@@ -39,7 +40,7 @@ console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
 
 ## Instructions
 
-1. Add the two CantoJpMin files to your project
+1. Add the two CantoJpMin js files to your project
 ```
 <script src="scripts/cantojpmin_data.js"></script>
 <script src="scripts/cantojpmin_functions.js"></script>
