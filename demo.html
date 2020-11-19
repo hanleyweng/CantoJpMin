@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>CantJpMin Demo</title>
+</head>
+
+<!-- Load the 2 CantoJpMin files -->
+<script src="scripts/cantojpmin_data.js"></script>
+<script src="scripts/cantojpmin_functions.js"></script>
+<!-- . -->
+
+<body>
+	<h1>CantoJpMin Demo</h1>
+
+	<p>Enter Traditional Chinese characters:</p>
+	<textarea id="input-field" rows="10" cols="40">食咗飯未呀?🍚</textarea>
+
+	<p>Prints Jyutping:</p>
+	<p id="jyutping-display">…</p>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+		// Run conversion once when document has loaded
+		convertInputFieldToJyutping();	
+
+		// Run conversion every time the text is changed
+		$('#input-field').on('input', function() {
+			convertInputFieldToJyutping();		
+		});
+
+	});
+
+	function convertInputFieldToJyutping() {
+			var txt = $('#input-field').val();
+
+			// print the Jyutping options
+			console.log(CantoJpMin.toJyutpingArray(txt));
+
+			// Convert to Jyutping
+			var jyutping = CantoJpMin.toJyutping(txt);
+
+			$('#jyutping-display').html(jyutping);
+		}
+</script>
+
+</html>
