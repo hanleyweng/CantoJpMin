@@ -1,5 +1,5 @@
-# CantoJpMin
-CantoJpMin – Cantonese Jyutping Minimized (廣東話/粵語 - 粵拼 - 縮細) _(gwong2 dung1 waa6 / jyut6 jyu5 - jyut6 ping1 - suk1 sai3)_
+# CantoJpMin (廣東話/粵語 - 粵拼 - 縮細)
+Cantonese Jyutping Minimized (廣東話/粵語 - 粵拼 - 縮細)
 
 This is a small script to enable Cantonese to Jyutping conversions (also known as 'Cantonese Transliteration' or 'Cantonese Romanization'). The script is optimized for small apps and static web pages or apps. It does does not require a backend server.
 
@@ -15,13 +15,15 @@ For a simpistic Cantonese to Jyutping transliteration, use 'toJyutping(…)':
 _(This uses the first jyutping option for each character)_
 ```
 console.log( CantoJpMin.toJyutping('食咗飯未呀?🍚') );
-// Result => sik6 zo2 faan6 mei6 aa1 ?🍚
+
+/* Result => sik6 zo2 faan6 mei6 aa1 ?🍚 */
 ```
 
 For a more detailed transliteration, use 'toJyutpingArray':
 ```
 console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
-// Result => 
+
+/* Result => 
 [{"original":"食","jyutpings":["sik6","sik2","zi6","ji6"]},
  {"original":"咗","jyutpings":["zo2"]},
  {"original":"飯","jyutpings":["faan6","faan2"]},
@@ -29,7 +31,7 @@ console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
  {"original":"呀","jyutpings":["aa1","ngaa1","aa3","ngaa3"]},
  {"original":"?"},
  {"original":"\ud83c"},
- {"original":"\udf5a"}]
+ {"original":"\udf5a"}] */
 ```
 
 ## Instructions
