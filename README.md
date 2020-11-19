@@ -1,7 +1,7 @@
 # CantoJpMin (廣東話/粵語 - 粵拼 - 縮細)
 Cantonese Jyutping Minimized
 
-This is a small script to enable Cantonese to Jyutping conversions (also known as 'Cantonese Transliteration' or 'Cantonese Romanization'). The script is optimized for small apps and static web pages or apps. It does does not require a backend server.
+This is a small script to enable Cantonese to Jyutping conversions (also known as 'Cantonese Transliteration' or 'Cantonese Romanization'). The script is optimized for small web apps and static web pages. It does does not require a backend server.
 
 
 ## Info
@@ -21,7 +21,7 @@ console.log( CantoJpMin.toJyutping('食咗飯未呀?🍚') );
 /* Result => sik6 zo2 faan6 mei6 aa1 ?🍚 */
 ```
 
-For a more detailed transliteration, use *'toJyutpingArray(…)'*:
+For a more detailed transliteration, parse *'toJyutpingArray(…)'*:
 ```
 console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
 
