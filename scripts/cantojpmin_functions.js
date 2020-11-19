@@ -54,8 +54,8 @@ var CantoJpMin = new CantoJpMinClass();
 
 // Examples:
 
-// console.log( toJyutping('食咗飯未呀?🍚') );
+// console.log( CantoJpMin.toJyutping('食咗飯未呀?🍚') );
 // Result => sik6 zo2 faan6 mei6 aa1 ?🍚
 
-// console.log( toJyutpingArray('食咗飯未呀?🍚') );
+// console.log( CantoJpMin.toJyutpingArray('食咗飯未呀?🍚') );
 // Result => [{"original":"食","jyutpings":["sik6","sik2","zi6","ji6"]},{"original":"咗","jyutpings":["zo2"]},{"original":"飯","jyutpings":["faan6","faan2"]},{"original":"未","jyutpings":["mei6"]},{"original":"呀","jyutpings":["aa1","ngaa1","aa3","ngaa3"]},{"original":"?"},{"original":"\ud83c"},{"original":"\udf5a"}]
